@@ -36,14 +36,3 @@ streamlit run app.py
 
 ---
 
-## Interview notes (plain language)
-- Fraud is imbalanced → accuracy can lie → PR‑AUC + recall/precision at a threshold is better
-- Time-based split helps reduce leakage
-- In production you also monitor drift (PSI is a starter signal)
-
----
-
-## Small caveat (serving features)
-In real systems, rolling-window features are computed online using a feature store.
-For a beginner-friendly demo, the Streamlit UI uses safe defaults for those fields.
-The notebooks show the “proper” rolling feature creation on historical data.
